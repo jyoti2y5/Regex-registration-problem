@@ -25,7 +25,21 @@ public class RegexPatternMatcher {
             System.out.println("last name pattern is not matched");
         }
 
+
     }
+    public void checkEmail(){
+        System.out.println("Enter Email Id :");
+        String emailId = sc.nextLine();
+        if(Pattern.matches("^[a-z]+([.$][a-zA-Z0-9]+[a-zA-Z0-9]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2})?",emailId))
+        {
+            System.out.println("Email is registered successfully");
+        }
+        else {
+            System.out.println("Email is not matched");
+        }
+
+    }
+
 
     
 
