@@ -39,6 +39,16 @@ public class RegexPatternMatcher {
         }
 
     }
+    public void checkPassword() {
+        System.out.println("Enter Password : ");
+        String password = sc.nextLine();
+        if(Pattern.matches("((?=.*\\d)(?=.*[A-Z])(?=.*\\W).{8,})",password)){
+            System.out.println("password is registered successfully");
+        }
+        else {
+            System.out.println("password is not matched");
+        }
+    }
 
 
     

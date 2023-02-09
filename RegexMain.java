@@ -5,7 +5,8 @@ public class RegexMain {
         RegexPatternMatcher rp=new RegexPatternMatcher();
         rp.checkFirstName();
         rp.checkLastName();
-        rp.checkEmail();
+      //  rp.checkEmail();
+        rp.checkPassword();
 
 
     }
